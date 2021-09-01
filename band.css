@@ -1,0 +1,415 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#main {
+    font-family: Helvetica, Arial, sans-serif;
+    padding-bottom: 100px;
+}
+
+#navbar {
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    height: 46px;
+    z-index: 10;
+}
+
+#navbar>ul {
+    position: relative;
+    background: black;
+}
+
+#navbar>ul>li {
+    display: inline-block;
+    height: 46px;
+    width: 93.83px;
+    text-align: center;
+    line-height: 46px;
+}
+
+#navbar>ul>li>a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-transform: uppercase;
+}
+
+#navbar>ul>li>a:hover {
+    background: rgb(167, 165, 165);
+    color: white;
+    box-shadow: 0px 5px 5px gray;
+}
+
+#moreChoice>ul {
+    position: absolute;
+    background: rgb(238, 232, 232);
+    width: 180px;
+    display: none;
+    z-index: 5;
+}
+
+#moreChoice>ul>li {
+    text-align: left;
+    list-style-type: none;
+    width: 180px;
+    height: 46px;
+    border-bottom: 1px solid rgb(133, 128, 128);
+}
+
+#moreChoice>ul>li>a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    padding-left: 15px;
+}
+
+#moreChoice>ul>li:hover {
+    background: gray;
+    box-shadow: 0px 5px 2.5px gray;
+}
+
+#moreChoice>ul>li>a:hover {
+    color: white;
+}
+
+#moreChoice:hover #subNav {
+    display: block;
+    z-index: 10;
+}
+
+#search {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 61.94px;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+}
+
+#optionMore {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 61.94px;
+    height: 46px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 46px;
+    display: none;
+    color: white;
+}
+
+.navLink-search a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.navLink-search a:hover {
+    background: rgb(230, 80, 80);
+    color: white;
+    box-shadow: 0px 5px 5px rgb(230, 145, 145);
+    line-height: 49px;
+}
+
+#optionMore>input {
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+    #navbar {
+        overflow: hidden;
+    }
+    #navbar>ul>li {
+        display: inline;
+        text-align: left;
+    }
+    #navbar>ul>li:hover {
+        width: 93.83px;
+    }
+    #home {
+        width: 93.83px;
+    }
+    #home>a {
+        width: 93.83px;
+    }
+    #search {
+        display: none;
+    }
+    #optionMore {
+        display: block;
+    }
+}
+
+
+/* ---------------Slider part----------------- */
+
+#container {
+    margin-top: 46px;
+    position: relative;
+}
+
+#slider {
+    position: relative;
+    background: red;
+}
+
+#slider img {
+    width: 100%;
+}
+
+#slider>div {
+    position: absolute;
+    width: 100%;
+}
+
+#img3 {
+    z-index: 2;
+}
+
+#img2 {
+    z-index: 2;
+}
+
+#img1 {
+    z-index: 2;
+}
+
+.inf {
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.inf>h1 {
+    font-size: 2rem;
+}
+
+#inf1 {
+    z-index: 0;
+}
+
+#inf2 {
+    z-index: 0;
+}
+
+#inf3 {
+    z-index: 0;
+}
+
+@media screen and (max-width: 530px) {
+    .inf {
+        display: none;
+    }
+}
+
+
+/* --------------------bandFoundInf--------------------- */
+
+#bandFoundInf {
+    position: relative;
+    margin-top: 50%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+}
+
+#bandFoundInf h2 {
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#bandFoundInf .p1 {
+    text-align: center;
+    color: rgb(163, 150, 150);
+    font-style: italic;
+}
+
+#bandFoundInf .PInf {
+    text-align: justify;
+    width: 50%;
+    margin: auto;
+}
+
+#tagName {
+    margin-top: 50px;
+}
+
+.tagName {
+    text-align: center;
+}
+
+
+/* --------------------Tickets--------------------- */
+
+#ticket {
+    background: black;
+    padding: 100px;
+}
+
+#ticket .header {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#ticket .header h3 {
+    text-transform: uppercase;
+    color: white;
+}
+
+#ticket .header>p {
+    font-style: italic;
+    color: gray;
+}
+
+#ticket .container ul {
+    width: 70%;
+    background: white;
+    margin: auto;
+}
+
+#ticket .container ul li {
+    padding-left: 20px;
+    height: 40px;
+    list-style-type: none;
+    border-top: 1px solid gray;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#ticket .container ul li span {
+    margin-right: 15px;
+}
+
+#ticket .container ul li div {
+    background: red;
+    color: white;
+    width: 80px;
+    text-align: center;
+}
+
+#ticket .November {
+    justify-content: space-between;
+}
+
+#ticket .November #slots {
+    width: 25px;
+    border-radius: 30px;
+    margin-right: 15px;
+    background: black;
+}
+
+#place .outSide_item {
+    width: 100%;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#place .item_content {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+#place .inSide_item {
+    background: white;
+    width: 30%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+#place .inSide_item img {
+    display: inline-block;
+    width: 100%;
+}
+
+#place .inSide_item p {
+    font-style: italic;
+    color: gray;
+}
+
+#place .inSide_item input {
+    background: black;
+    color: white;
+    border: 0px solid;
+    width: 25%;
+    height: 30px;
+}
+
+#footer {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer h4 {
+    text-transform: uppercase;
+}
+
+#footer p {
+    font-style: italic;
+}
+
+#form {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#form ul li {
+    list-style-type: none;
+    font-weight: 500;
+}
+
+#myform {
+    display: flex;
+    flex-direction: column;
+}
+
+#myform input {
+    margin-top: 10px;
+    padding-left: 8px;
+    border: 0.3px solid gray;
+}
+
+#myform #message {
+    width: 100%;
+}
+
+#myform #btn {
+    float: right;
+    background: black;
+    color: white;
+    border: 0px solid;
+    width: 23%;
+    height: 30px;
+}
+
+#footer img {
+    margin-top: 80px;
+    width: 100%;
+}
+
+#footer #media {
+    margin-top: 100px;
+}
+
+#footer #media a {
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+}
+
+#footer #media a:hover {
+    opacity: 0.6;
+}
